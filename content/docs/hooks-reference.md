@@ -70,7 +70,7 @@ The "+" and "-" buttons use the functional form, because the updated value is ba
 > Unlike the `setState` method found in class components, `useState` does not automatically merge update objects. You can replicate this behavior by combining the function updater form with object spread syntax:
 >
 > ```js
-> setState(prevState => {
+> useState(prevState => {
 >   // Object.assign would also work
 >   return {...prevState, ...updatedValues};
 > });
